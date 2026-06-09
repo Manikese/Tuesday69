@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCANUM — The Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="archive-page">
+
+  <!-- Background canvas for stars -->
+  <canvas id="starfield"></canvas>
+
+  <!-- ─── NAVIGATION ────────────────────────────────────────── -->
+  <nav class="archive-nav" id="archiveNav">
+    <span class="archive-nav-logo">ARCANUM</span>
+    <a href="index.html" class="archive-back-link">Return to Threshold</a>
+  </nav>
+
+  <!-- ─── INTRO ────────────────────────────────────────────── -->
+  <section id="archive-intro">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="archive-fog"></div>
+
+    <div class="archive-intro-content">
+      <!-- CSS-only portal / doorway visual -->
+      <div class="archive-portal fade-up">
+        <div class="portal-ring"></div>
+        <div class="portal-ring"></div>
+        <div class="portal-ring"></div>
+        <div class="portal-core"></div>
+      </div>
+
+      <p class="archive-eyebrow fade-up delay-1">/ archive</p>
+      <h1 class="archive-headline fade-up delay-2">The Archive</h1>
+      <p class="archive-sub fade-up delay-3">
+        A hidden chamber for ideas not yet ready for daylight.
+      </p>
+      <a href="#archive-secrets" class="btn-primary fade-up delay-4" id="revealBtn">
+        Reveal a Secret
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── SECRET REVEAL ────────────────────────────────────── -->
+  <section id="archive-secrets">
+    <div class="secrets-frame">
+      <div class="section-label reveal">/ transmissions</div>
+
+      <div class="secrets-top-rule"></div>
+
+      <div class="secret-display">
+        <p class="secret-text" id="secretText">
+          Click below to receive the first transmission.
+        </p>
+      </div>
+
+      <p class="secret-counter" id="secretCounter">&mdash;</p>
+
+      <div class="secrets-bottom-rule"></div>
+
+      <button class="btn-primary" id="nextSecret" style="cursor:pointer;">
+        Next Transmission
+      </button>
+    </div>
+  </section>
+
+  <!-- ─── KNOWLEDGE CARDS ───────────────────────────────────── -->
+  <section id="archive-knowledge">
+    <div class="container">
+      <div class="section-label reveal">/ disciplines</div>
+      <h2 class="section-headline centered reveal">
+        Five chambers.<br /><em>One pursuit.</em>
+      </h2>
+
+      <!-- Row 1: 3 cards -->
+      <div class="archive-cards-grid">
+
+        <div class="card reveal delay-1">
+          <div class="card-glyph">&#9673;</div>
+          <h3 class="card-title">Consciousness</h3>
+          <p class="card-desc">
+            The observer cannot be separated from the observed.
+            The self is both the lens and the light — and what
+            you perceive depends entirely on what you are willing to become.
+          </p>
+          <div class="card-line"></div>
+          <span class="card-action">Study</span>
+        </div>
+
+        <div class="card reveal delay-2">
+          <div class="card-glyph">&#9650;</div>
+          <h3 class="card-title">Artificial Intelligence</h3>
+          <p class="card-desc">
+            We built mirrors that think. What they reflect depends
+            entirely on what we showed them. The question is not
+            what AI can do — it is what we will ask of it.
+          </p>
+          <div class="card-line"></div>
+          <span class="card-action">Enter</span>
+        </div>
+
+        <div class="card reveal delay-3">
+          <div class="card-glyph">&#8734;</div>
+          <h3 class="card-title">Bitcoin</h3>
+          <p class="card-desc">
+            A ledger no single hand can rewrite. The first truly
+            neutral money — indifferent to power, immune to petition,
+            patient as mathematics.
+          </p>
+          <div class="card-line"></div>
+          <span class="card-action">Open</span>
+        </div>
+
+      </div>
+
+      <!-- Row 2: 2 cards centered -->
+      <div class="archive-cards-row-2">
+
+        <div class="card reveal delay-1">
+          <div class="card-glyph">&#9670;</div>
+          <h3 class="card-title">Entrepreneurship</h3>
+          <p class="card-desc">
+            Most ventures solve problems. The rare few dissolve the
+            belief that the problem was inevitable. That is the
+            difference between a service and a shift.
+          </p>
+          <div class="card-line"></div>
+          <span class="card-action">Study</span>
+        </div>
+
+        <div class="card reveal delay-2">
+          <div class="card-glyph">&#9651;</div>
+          <h3 class="card-title">Philosophy</h3>
+          <p class="card-desc">
+            Not the love of answers. The discipline of living with
+            better questions — and the courage to let them change
+            everything you thought you knew.
+          </p>
+          <div class="card-line"></div>
+          <span class="card-action">Enter</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EASTER EGG ─────────────────────────────────────────── -->
+  <!-- Barely visible — reward for those who notice -->
+  <section id="archive-easter">
+    <span class="easter-glyph" id="easterGlyph" title="">&#9672;</span>
+    <div class="easter-message" id="easterMessage">
+      <p class="easter-line-1">"You noticed what others passed by."</p>
+      <p class="easter-line-2">The first gate is attention.</p>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER / RETURN ──────────────────────────────────── -->
+  <footer id="archive-footer">
+    <div class="archive-footer-rule"></div>
+    <a href="index.html" class="archive-return">Return to the Threshold</a>
+    <div class="archive-footer-rule"></div>
+    <p class="archive-footer-copy">ARCANUM &mdash; All rites reserved.</p>
+  </footer>
+
+  <script src="archive.js"></script>
+</body>
+</html>
