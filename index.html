@@ -1,1 +1,143 @@
-<body><h1>Hello, this is our template</h1></body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCANUM — Beyond the Known</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Background canvas for stars -->
+  <canvas id="starfield"></canvas>
+
+  <!-- ─── HERO ─────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <nav class="nav">
+      <span class="nav-logo">ARCANUM</span>
+      <a href="#contact" class="nav-link">Enter</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-up">Est. in the space between</p>
+      <h1 class="hero-headline fade-up delay-1">
+        Where mystery<br /><em>becomes mastery.</em>
+      </h1>
+      <p class="hero-tagline fade-up delay-2">
+        A sanctuary for those who seek what lies beyond the surface.
+      </p>
+      <a href="#about" class="btn-primary fade-up delay-3">Discover More</a>
+    </div>
+
+    <div class="hero-scroll-hint fade-up delay-4">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">/ concept</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-headline">
+            Not everything<br /><em>can be explained.</em>
+          </h2>
+        </div>
+        <div class="about-body reveal delay-1">
+          <p>
+            We exist at the intersection of the ancient and the ahead — where
+            intuition is engineered and ambiguity is refined into precision.
+            Every detail is deliberate. Every silence, intentional.
+          </p>
+          <p>
+            ARCANUM is not for the casual observer. It is for those who
+            understand that true luxury is the possession of knowledge others
+            cannot access.
+          </p>
+          <div class="divider"></div>
+          <span class="quote-mark">&ldquo;</span>
+          <blockquote>
+            The most beautiful thing we can experience is the mysterious.
+          </blockquote>
+          <cite>— Albert Einstein</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ──────────────────────────────────────────── -->
+  <section id="features">
+    <div class="container">
+      <div class="section-label">/ offerings</div>
+      <h2 class="section-headline centered reveal">Three pillars.<br /><em>One vision.</em></h2>
+
+      <div class="cards-grid">
+
+        <div class="card reveal delay-1">
+          <div class="card-glyph">&#9670;</div>
+          <h3 class="card-title">Clarity</h3>
+          <p class="card-desc">
+            Precision thinking distilled into pure signal. We cut through
+            noise so only what matters remains — luminous and undeniable.
+          </p>
+          <div class="card-line"></div>
+        </div>
+
+        <div class="card reveal delay-2">
+          <div class="card-glyph">&#9651;</div>
+          <h3 class="card-title">Depth</h3>
+          <p class="card-desc">
+            Surface-level answers are for others. We descend into the
+            architecture of ideas, where the real patterns hide in plain sight.
+          </p>
+          <div class="card-line"></div>
+        </div>
+
+        <div class="card reveal delay-3">
+          <div class="card-glyph">&#9711;</div>
+          <h3 class="card-title">Resonance</h3>
+          <p class="card-desc">
+            Work that vibrates at the right frequency. Crafted to be felt
+            before it is understood — and remembered long after.
+          </p>
+          <div class="card-line"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FINAL CTA ──────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="orb orb-3"></div>
+    <div class="container cta-container">
+      <div class="section-label">/ begin</div>
+      <h2 class="cta-headline reveal">
+        The door is open.<br /><em>Are you ready?</em>
+      </h2>
+      <p class="cta-sub reveal delay-1">
+        Reserved for a select few. Inquiries by invitation only.
+      </p>
+      <a href="mailto:contact@arcanum.studio" class="btn-primary reveal delay-2">
+        Request Access
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer>
+    <span class="nav-logo">ARCANUM</span>
+    <p>&copy; 2026 — All rites reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
